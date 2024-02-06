@@ -14,6 +14,8 @@ from pathlib import Path
 import os
 import logging
 from datetime import timedelta
+import django_heroku
+from django.conf import settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -195,3 +197,10 @@ CACHES = {
         }
     }
 }
+
+django_heroku.settings(locals())
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
