@@ -1,0 +1,8 @@
+build:
+  docker:
+    web: ./backend/Dockerfile
+    worker: ./frontend/Dockerfile
+
+release:
+  command:
+    - echo "Release command here"
