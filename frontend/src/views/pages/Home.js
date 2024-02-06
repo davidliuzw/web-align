@@ -38,10 +38,6 @@ const Home = () => {
             <td>Containerization</td>
             <td>Docker</td>
           </tr>
-          <tr>
-            <td>Deployment</td>
-            <td>Heroku</td>
-          </tr>
         </tbody>
       </table>
       <h3>Usage</h3>
