@@ -1,0 +1,14 @@
+{
+    "query_number": "123456",
+    "sequence": "ATCGATCG",
+    "timestamp": "2024-02-01 12:34:56",
+    "alignments": "aligned_sequence1, aligned_sequence2, aligned_sequence3",
+    "message": "Alignment completed successfully"
+}
+
+{
+    "username": "test1",
+    "email": "test1@t.com",
+    "password": "test12345",  // At least 8 characters
+    "confirm_password": "test12345"  // At least 8 characters
+  }
