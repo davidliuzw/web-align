@@ -10,7 +10,7 @@ const AlignResultDetail = () => {
       console.log('start fetching data')
       console.log(query_number)
       try {
-        const apiUrl = `${process.env.REACT_APP_API_URL}api/result_detail/${query_number}`
+        const apiUrl = `${process.env.REACT_APP_API_URL}/api/result_detail/${query_number}`
         const response = await fetch(apiUrl)
         const data = await response.json()
         setResultData(data)
