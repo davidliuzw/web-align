@@ -62,6 +62,7 @@ def align_sequence_to_lib(sequence):
             if alignment:
                 logging.info("Alignment hit!")
                 results = [record.description]
+                logger.info(results)
                 return results
     return None
 

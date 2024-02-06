@@ -4,7 +4,8 @@ import { CCard, CCardHeader, CCardBody, CCardTitle, CCardText, CButton } from '@
 const Profile = () => {
   const token = localStorage.getItem('token')
   const [userData, setUserData] = useState({})
-  const apiUrl = 'http://127.0.0.1:8000/api/profile'
+  // const apiUrl = 'http://127.0.0.1:8000/api/profile'
+  const apiUrl = `${process.env.REACT_APP_API_URL}/api/profile/`
 
   useEffect(() => {
     const fetchProfileData = async () => {

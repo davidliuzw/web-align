@@ -27,10 +27,15 @@ const AlignWithSockets = () => {
   const [responses, setResponses] = useState([])
 
   const token = localStorage.getItem('token')
-  const socketUrl = 'ws://127.0.0.1:8000/ws/align-sequences-sockets/?token=' + token
+  // const socketUrl = 'ws://127.0.0.1:8000/ws/align-sequences-sockets/?token=' + token
+  const socketUrl = `${process.env.REACT_APP_API_URL.replace(
+    /^http/,
+    'ws',
+  )}/ws/align-sequences-sockets/?token=${token}`
   const alignmentSocket = new WebSocket(socketUrl)
   const [socket, setSocket] = useState(alignmentSocket)
-  const apiUrl = 'http://127.0.0.1:8000/api/align-sequences/'
+  const apiUrl = `${process.env.REACT_APP_API_URL}/api/align-sequences/`
+  // const apiUrl = 'http://127.0.0.1:8000/api/align-sequences/'
 
   useEffect(() => {
     const fetchData = async () => {

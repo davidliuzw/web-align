@@ -26,7 +26,8 @@ const Align = () => {
   const [sequence, setSequence] = useState('')
   const [isFormValid, setIsFormValid] = useState(true)
   const [responses, setResponses] = useState([])
-  const apiUrl = 'http://127.0.0.1:8000/api/align-sequences/'
+  const apiUrl = `${process.env.REACT_APP_API_URL}/api/align-sequences/`
+  // const apiUrl = 'http://127.0.0.1:8000/api/align-sequences/'
   const token = localStorage.getItem('token')
   useEffect(() => {
     const fetchData = async () => {

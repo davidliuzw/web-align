@@ -23,6 +23,13 @@
 
 `docker-compose up --build`
 
+#### Test User Credentials
+| Username | Password  |
+|----------|-----------|
+| test1    | test12345 |
+| test2    | test12345 |
+
+
 ***
 
 ### Core Feature
