@@ -82,6 +82,12 @@
 - Cache recent query results to reduce latency.
 - Well designed user interface.
 
+### Video Demonstrations
+[Watch Video 1](https://drive.google.com/file/d/1DAwZdujR0p5rZSJl6Wn_dAQPYGZKKK0N/view?usp=drive_link)
+
+[Watch Video 2](https://drive.google.com/file/d/1VlVxxlhYSUfMF915e6XS4PPj14VKwdgB/view?usp=drive_link)
+
+
 #### Genome List
 
 - NC_000852
